@@ -4,7 +4,7 @@ import com.google.inject.Inject;
 import de.lergin.sponge.test.deathCanon.DeathCanonCommand;
 import de.lergin.sponge.test.supplyDrop.SupplyDropLandListener;
 import de.lergin.sponge.test.supplyDrop.SupplyDropCommand;
-import de.lergin.sponge.test.waterLightning.WaterLightningCommand;
+import de.lergin.sponge.test.waterLighting.WaterLightingCommand;
 import org.slf4j.Logger;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.command.spec.CommandSpec;
@@ -48,7 +48,7 @@ public class TestPlugin {
                 .build();
 
         CommandSpec waterLightningCommandSpec = CommandSpec.builder()
-                .executor(new WaterLightningCommand())
+                .executor(new WaterLightingCommand())
                 .build();
 
         CommandSpec deathCanonCommandSpec = CommandSpec.builder()

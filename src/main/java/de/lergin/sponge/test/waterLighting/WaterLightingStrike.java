@@ -1,9 +1,7 @@
-package de.lergin.sponge.test.waterLightning;
+package de.lergin.sponge.test.waterLighting;
 
 import com.flowpowered.math.vector.Vector3d;
 import com.flowpowered.math.vector.Vector3i;
-import de.lergin.sponge.test.TestPlugin;
-import org.spongepowered.api.Sponge;
 import org.spongepowered.api.block.BlockType;
 import org.spongepowered.api.block.BlockTypes;
 import org.spongepowered.api.entity.Entity;
@@ -23,13 +21,13 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class WaterLightningStrike {
+public class WaterLightingStrike {
     private final Location<World> loc;
     private final double strength;
     private final double distance;
     private List<Vector3i> affectedLocs = new ArrayList<>();
 
-    public WaterLightningStrike(Location<World> loc, double strength, double distance) {
+    public WaterLightingStrike(Location<World> loc, double strength, double distance) {
         this.loc = loc;
         this.strength = strength;
         this.distance = distance;

@@ -1,4 +1,4 @@
-package de.lergin.sponge.test.waterLightning;
+package de.lergin.sponge.test.waterLighting;
 
 import org.spongepowered.api.command.CommandException;
 import org.spongepowered.api.command.CommandResult;
@@ -9,7 +9,7 @@ import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;
 
-public class WaterLightningCommand implements CommandExecutor {
+public class WaterLightingCommand implements CommandExecutor {
     public CommandResult execute(CommandSource commandSource, CommandContext commandContext) throws CommandException {
 
         if(!(commandSource instanceof Player))
@@ -19,7 +19,7 @@ public class WaterLightningCommand implements CommandExecutor {
 
         Location<World> loc = player.getLocation();
 
-        WaterLightningStrike lightning = new WaterLightningStrike(loc, 2.0, 10.0);
+        WaterLightingStrike lightning = new WaterLightingStrike(loc, 2.0, 10.0);
 
         lightning.strice();
 
